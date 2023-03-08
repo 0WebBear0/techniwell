@@ -1,0 +1,31 @@
+html,
+body {
+	height: 100%;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600px;
+    font-size: 18px;
+    color: white;
+    font-style: normal;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
