@@ -17,6 +17,8 @@ body{
 	min-height: 100%;
 }
 
+
+
 .main {
 	flex: 1 0 auto;
 }
@@ -25,6 +27,21 @@ body{
 }
 
 .container{
-  margin: 0;
+  max-width: 100%;
+  margin: 0 auto;
+
+  padding: 0;
+}
+
+.container_min{
+  min-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+
+}
+
+.container_max{
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 0;
 }

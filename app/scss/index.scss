@@ -6,6 +6,7 @@
     background-color: #3B4956;
     padding: 60px 0 60px 0;
 
+
     &__numbers{
 
     }
@@ -131,10 +132,16 @@
     // .help__img
 
     &__img {
-      margin-bottom: 34px;
+
     }
   }
   &-spare {
+    &__container_max{
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0;
+    }
     margin-bottom: 88px;
     background-color: #3B4956;
 
@@ -250,7 +257,7 @@
     }
   }
   &-application {
-
+    
     position: relative;
     z-index: 100;
     margin-bottom: 100px;
@@ -375,6 +382,7 @@
     }
   }
   &__img{
+    margin-bottom: 106px;
     background-image: url("../img/content1/1.png");
     position: unset;
     width: 100%;
@@ -459,5 +467,24 @@
     margin-bottom: 90px;
   }
 }
+
+
+.main__img{
+  &__container1{
+    margin-right: 65px;
+    min-width: 1200px;
+    margin: 0 auto;
+   }
+}
+
+
+
+.main-help{
+   &__container2{
+    display: flex;
+    margin: 0 auto;
+   }
+}
+
 
 
