@@ -1,6 +1,8 @@
 @import "var";
 @import "index";
 
+
+
 /*----------------------------------------*/
 .header {
   z-index: 100;
@@ -75,7 +77,6 @@
     align-items: center;
     justify-content: space-between;
     font-size: 16px;
-    
   }
 
   // .header__sub-menu-logo
@@ -93,7 +94,8 @@
     flex-direction: column;
   }
   &__sub-menu-item-square {
- 
+    display: flex;
+    flex-direction: column;
   } 
 
   // .header__link
@@ -121,7 +123,7 @@
     }
   }
   &__underline{
-
+    margin-top: 3px;
   }
 }
 
@@ -195,7 +197,6 @@
     align-items: center;
     justify-content: space-between;
     font-size: 16px;
-    margin: 22px;
   }
 
   // .header__sub-menu-logo
