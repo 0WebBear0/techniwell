@@ -2,13 +2,10 @@
 @import "index";
 
 
-
 /*----------------------------------------*/
 .header {
-  margin-bottom: 65px;
-
   z-index: 10;
-  margin-bottom: -157px;
+  margin-bottom: -173px;
   padding-top: 55px;
   // .header__inner
   &__square
@@ -21,7 +18,7 @@
   &__menu {
     display: flex;
     align-items: center;
-    margin-bottom: 22px;
+    margin-bottom: 37px;
   }
 
   // .header__menu-logo
@@ -30,6 +27,11 @@
     font-size: 30px;
     line-height: 37px;
     margin-right: 81px;
+    cursor: pointer;
+    @include transition();
+    &:hover{
+      @include transform();
+    }
   }
 
   // .header__menu-text
@@ -40,36 +42,54 @@
     line-height: 24px;
     margin-right: 137px;
     max-width: 250px;
+    cursor: pointer;
+    @include transition();
+    &:hover{
+      @include transform();
+    }
   }
 
   // .header__menu-mail
 
   &__menu-mail {
     color: #FFFFFF;
-      svg{
-        margin-right: 20px;
-      }
+
+    svg {
+      margin-right: 20px;
+    }
+
     display: flex;
     align-items: center;
     font-weight: 400;
     line-height: 24px;
     margin-right: 80px;
+    cursor: pointer;
+    @include transition();
+    &:hover{
+      @include transform();
+    }
   }
 
 
-
   &__menu-phone {
-    svg{
+    svg {
       margin-right: 20px;
     }
-    img{
+
+    img {
       height: 42px;
       margin-right: 19px;
     }
+
     display: flex;
     align-items: center;
     font-weight: 400;
     line-height: 24px;
+    cursor: pointer;
+    @include transition();
+    &:hover{
+      @include transform();
+    }
   }
 
   // .header__sub-menu
@@ -94,11 +114,20 @@
     line-height: 30px;
     display: flex;
     flex-direction: column;
+    @include transition();
+    &:hover{
+      @include transform();
+    }
   }
+
   &__sub-menu-item-square {
     display: flex;
     flex-direction: column;
-  } 
+    @include transition();
+    &:hover{
+      @include transform();
+    }
+  }
 
   // .header__link
 
@@ -116,22 +145,22 @@
 
   }
 }
-.sub-menu-item-square{
-  &__title{
+
+.sub-menu-item-square {
+  &__title {
     display: flex;
     align-items: center;
-    img{
+    line-height: 30px;
+
+    img {
       margin-right: 17px;
     }
-  }
-  &__underline{
-    margin-top: 3px;
   }
 }
 
 /*----------------------------------------*/
 .footer {
-  color:$text;
+  color: $text;
   margin-bottom: 89px;
   // .header__inner
 
@@ -168,10 +197,12 @@
 
   &__menu-mail {
     color: #FFFFFF;
-    img{
+
+    img {
       height: 42px;
       margin-right: 19px;
     }
+
     display: flex;
     align-items: center;
     font-weight: 400;
@@ -182,10 +213,11 @@
   // .header__menu-phone
 
   &__menu-phone {
-    img{
+    img {
       height: 42px;
       margin-right: 19px;
     }
+
     display: flex;
     align-items: center;
     font-weight: 400;
