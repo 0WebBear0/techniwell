@@ -5,6 +5,7 @@
 
 /*----------------------------------------*/
 .header {
+
   margin-bottom: 65px;
 
   z-index: 10;
@@ -20,6 +21,7 @@
 
   &__menu {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 22px;
   }
@@ -30,6 +32,7 @@
     font-size: 30px;
     line-height: 37px;
     margin-right: 81px;
+    
   }
 
   // .header__menu-text
@@ -40,6 +43,7 @@
     line-height: 24px;
     margin-right: 137px;
     max-width: 250px;
+
   }
 
   // .header__menu-mail
@@ -232,4 +236,11 @@
   }
 }
 
-
+@media (max-width: 900px) {
+	.header {
+    &__menu-mail{
+      
+    }
+		color:red;
+	}
+}
