@@ -3,12 +3,12 @@ body {
 	height: 100%;
 }
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(3, 186, 43);
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-style: normal;
 }
 .wrapper {
@@ -29,19 +29,27 @@ body{
 .container{
   max-width: 100%;
   margin: 0 auto;
-
-  padding: 0;
 }
 
 .container_min{
+  padding: 0 15px;
   min-width: 1200px;
   margin: 0 auto;
-  padding: 0;
-
 }
 
 .container_max{
+  padding: 0 15px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0;
 }
+
+
+/*
+для теста 
+
+@media (max-width: 900px) {
+	body {
+		background-color: red;
+	}
+}
+*/

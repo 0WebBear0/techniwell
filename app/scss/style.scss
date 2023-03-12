@@ -161,6 +161,10 @@
 /*----------------------------------------*/
 .footer {
   color: $text;
+
+  a{
+    color: $text;
+  }
   margin-bottom: 89px;
   // .header__inner
 
@@ -172,6 +176,7 @@
   &__menu {
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
   }
 
   // .header__menu-logo
@@ -228,7 +233,7 @@
 
   &__sub-menu {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     font-size: 16px;
   }
@@ -264,4 +269,22 @@
   }
 }
 
+/*----------------------------------------*/
 
+@media (max-width: 900px) {
+
+
+
+
+	.header {
+    &__menu{
+
+
+    }
+    &__sub-menu{
+
+
+    }
+  }
+
+}
