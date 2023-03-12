@@ -3,12 +3,12 @@ body {
 	height: 100%;
 }
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(3, 186, 43);
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-style: normal;
 }
 .wrapper {

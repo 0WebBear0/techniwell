@@ -23,7 +23,7 @@
 
   &__menu {
     display: flex;
-    flex-wrap: wrap;
+ 
     align-items: center;
     margin-bottom: 22px;
   }
@@ -80,9 +80,9 @@
   // .header__sub-menu
 
   &__sub-menu {
-    flex-wrap: wrap;
+
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     font-size: 16px;
   }
@@ -117,7 +117,9 @@
 
 /*----------------------------------------*/
 .footer {
+  
   color: $text;
+
   a{
     color: $text;
   }
@@ -186,7 +188,7 @@
 
   &__sub-menu {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     font-size: 16px;
   }
@@ -225,9 +227,19 @@
 /*----------------------------------------*/
 
 @media (max-width: 900px) {
+
+
+
+  
 	.header {
-    &__menu-mail{
-      
+    &__menu{
+
+
     }
-	}
+    &__sub-menu{
+
+
+    }
+  }
+
 }
