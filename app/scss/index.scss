@@ -384,14 +384,14 @@
   }
   &__img{
     margin-bottom: 106px;
-    background-image: url("../img/content1/1.png");
-    position: unset;
-    width: 100%;
-    display: flex;
-    object-fit: cover;
-    flex-direction: column;
-    justify-content: end;
 
+    background-image: url("../img/content1/1.png");
+
+
+    display: flex;
+    
+    flex-direction: column;
+    
   }
 }
 

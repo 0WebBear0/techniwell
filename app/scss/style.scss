@@ -4,6 +4,8 @@
 
 
 /*----------------------------------------*/
+
+
 .header {
 
   margin-bottom: 65px;
@@ -61,7 +63,6 @@
   }
 
 
-
   &__menu-phone {
     svg{
       margin-right: 20px;
@@ -79,18 +80,13 @@
   // .header__sub-menu
 
   &__sub-menu {
+    flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 16px;
   }
 
-  // .header__sub-menu-logo
-
-  &__sub-menu-logo {
-  }
-
-  // .header__sub-menu-item
 
   &__sub-menu-item {
     font-weight: 500;
@@ -104,21 +100,7 @@
     flex-direction: column;
   } 
 
-  // .header__link
 
-  &__link {
-  }
-
-  // .header__line
-
-  &__line {
-  }
-
-  // .header__menu-item
-
-  &__menu-item {
-
-  }
 }
 .sub-menu-item-square{
   &__title{
@@ -135,7 +117,10 @@
 
 /*----------------------------------------*/
 .footer {
-  color:$text;
+  color: $text;
+  a{
+    color: $text;
+  }
   margin-bottom: 89px;
   // .header__inner
 
@@ -147,6 +132,7 @@
   &__menu {
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
   }
 
   // .header__menu-logo
@@ -236,11 +222,12 @@
   }
 }
 
+/*----------------------------------------*/
+
 @media (max-width: 900px) {
 	.header {
     &__menu-mail{
       
     }
-		color:red;
 	}
 }
