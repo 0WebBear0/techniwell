@@ -29,7 +29,8 @@
     margin-right: 81px;
     cursor: pointer;
     @include transition();
-    &:hover{
+
+    &:hover {
       @include transform();
     }
   }
@@ -44,7 +45,8 @@
     max-width: 250px;
     cursor: pointer;
     @include transition();
-    &:hover{
+
+    &:hover {
       @include transform();
     }
   }
@@ -65,7 +67,8 @@
     margin-right: 80px;
     cursor: pointer;
     @include transition();
-    &:hover{
+
+    &:hover {
       @include transform();
     }
   }
@@ -87,7 +90,8 @@
     line-height: 24px;
     cursor: pointer;
     @include transition();
-    &:hover{
+
+    &:hover {
       @include transform();
     }
   }
@@ -115,7 +119,8 @@
     display: flex;
     flex-direction: column;
     @include transition();
-    &:hover{
+
+    &:hover {
       @include transform();
     }
   }
@@ -124,7 +129,8 @@
     display: flex;
     flex-direction: column;
     @include transition();
-    &:hover{
+
+    &:hover {
       @include transform();
     }
   }
@@ -162,9 +168,10 @@
 .footer {
   color: $text;
 
-  a{
+  a {
     color: $text;
   }
+
   margin-bottom: 89px;
   // .header__inner
 
@@ -274,14 +281,13 @@
 @media (max-width: 900px) {
 
 
-
-
-	.header {
-    &__menu{
+  .header {
+    &__menu {
 
 
     }
-    &__sub-menu{
+
+    &__sub-menu {
 
 
     }
