@@ -3,6 +3,9 @@
   background-color: #3B4956;
   padding: 60px 0 60px 0;
 }
+.main-experience__numbers {
+  white-space: nowrap;
+}
 .main-experience__plus {
   margin-top: 5px;
   font-size: 100px;
@@ -116,6 +119,7 @@
   width: 100%;
   margin: 0 auto;
   padding: 0;
+  align-items: center;
   position: relative;
 }
 .main-spare__img {
@@ -166,6 +170,9 @@
 }
 .main-about-big {
   margin-bottom: 110px;
+}
+.main-about-big img {
+  object-fit: cover;
 }
 .main-about-big__info {
   display: flex;
@@ -241,7 +248,6 @@
   background-color: #b10b00;
 }
 .main-category {
-  padding-left: 150px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -254,7 +260,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 72px 150px 30px 0;
-  max-width: 1350px;
+  max-width: 1200px;
   width: 100%;
 }
 .main-category__top h3 {
@@ -336,8 +342,11 @@
   color: black;
 }
 .main-category__card-helper {
+  padding-left: calc(17% - 100px);
   position: relative;
-  max-width: 1350px;
+  display: flex;
+  justify-content: end;
+  width: 100%;
 }
 .main-category__card-opacity {
   position: absolute;
@@ -370,7 +379,7 @@
   justify-content: space-between;
 }
 .card-list__item {
-  padding-left: 38px;
+  padding: 0 38px;
 }
 
 .item:hover {
@@ -386,7 +395,6 @@
 .item__up {
   display: flex;
   justify-content: space-between;
-  margin-right: 31px;
 }
 .item__logo {
   margin-top: 50px;
@@ -424,8 +432,47 @@
 .main-help__container2 {
   display: flex;
   margin: 0 auto;
+  align-items: center;
 }
 
+@media (max-width: 1200px) {
+  .main-application {
+    padding: 0 30px;
+  }
+  .main-experience {
+    padding: 60px 30px;
+  }
+  .main-about {
+    padding: 0 30px;
+  }
+  .main-help {
+    padding: 34px 30px;
+  }
+  .main-category__top {
+    padding: 34px 30px;
+  }
+  .main-spare {
+    padding: 50px 30px;
+  }
+  .main-spare__img {
+    margin-right: 50px;
+  }
+  .main-spare__img_back {
+    top: 80px;
+  }
+  .main-about-big {
+    padding: 0 30px;
+  }
+  .card-list {
+    padding: 0 30px;
+  }
+  .item {
+    width: 300px;
+  }
+  .item__text {
+    margin-bottom: 50px;
+  }
+}
 .product-information__page {
   color: black;
 }
@@ -539,7 +586,7 @@
 /*----------------------------------------*/
 .header {
   z-index: 10;
-  margin-bottom: -173px;
+  margin-bottom: -200px;
   padding-top: 55px;
 }
 .header__square .header__inner {
@@ -611,6 +658,7 @@
   align-items: center;
   justify-content: space-between;
   font-size: 16px;
+  gap: 20px;
 }
 .header__sub-menu-item {
   font-weight: 500;
@@ -657,6 +705,11 @@
   font-size: 30px;
   line-height: 37px;
   margin-right: 81px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.footer__menu-logo:hover {
+  transform: scale(1.05);
 }
 .footer__menu-text {
   font-weight: 400;
@@ -664,28 +717,45 @@
   line-height: 24px;
   margin-right: 137px;
   max-width: 250px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.footer__menu-text:hover {
+  transform: scale(1.05);
 }
 .footer__menu-mail {
   color: #FFFFFF;
   display: flex;
   align-items: center;
+  gap: 20px;
   font-weight: 400;
   line-height: 24px;
   margin-right: 80px;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 .footer__menu-mail img {
   height: 42px;
   margin-right: 19px;
 }
+.footer__menu-mail:hover {
+  transform: scale(1.05);
+}
 .footer__menu-phone {
   display: flex;
   align-items: center;
+  gap: 20px;
   font-weight: 400;
   line-height: 24px;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 .footer__menu-phone img {
   height: 42px;
   margin-right: 19px;
+}
+.footer__menu-phone:hover {
+  transform: scale(1.05);
 }
 .footer__sub-menu {
   display: flex;
@@ -699,9 +769,46 @@
   line-height: 30px;
   display: flex;
   flex-direction: column;
+  transition: all 0.3s;
+}
+.footer__sub-menu-item:hover {
+  transform: scale(1.05);
+}
+.footer__sub-menu-item-square {
+  transition: all 0.3s;
+}
+.footer__sub-menu-item-square:hover {
+  transform: scale(1.05);
 }
 /*----------------------------------------*/
 .page-padding {
   max-width: 1200px;
   padding: 0 375px 0 375px;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 55px 30px 0 30px;
+  }
+  .header__menu-logo {
+    margin-right: 30px;
+  }
+  .header__menu-text {
+    margin-right: 0;
+  }
+  .header__menu-mail {
+    margin-right: 30px;
+  }
+  .footer {
+    padding: 55px 30px 0 30px;
+  }
+  .footer__menu-logo {
+    margin-right: 30px;
+  }
+  .footer__menu-text {
+    margin-right: 0;
+  }
+  .footer__menu-mail {
+    margin-right: 30px;
+  }
 }

@@ -8,7 +8,7 @@
 
 
     &__numbers {
-
+      white-space: nowrap;
     }
 
     &__plus {
@@ -167,6 +167,7 @@
       width: 100%;
       margin: 0 auto;
       padding: 0;
+      align-items: center;
       position: relative;
     }
 
@@ -246,6 +247,9 @@
 
     //padding-left: ;
 
+    img {
+      object-fit: cover;
+    }
     margin-bottom: 110px;
     &__info {
       display: flex;
@@ -363,7 +367,6 @@
   }
 
   &-category {
-    padding-left: 150px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -376,7 +379,7 @@
       align-items: center;
       justify-content: space-between;
       padding: 72px 150px 30px 0;
-      max-width: 1350px;
+      max-width: 1200px;
       width: 100%;
 
       h3 {
@@ -473,8 +476,11 @@
     }
 
     &__card-helper {
+      padding-left: calc(17% - 100px);
       position: relative;
-      max-width: 1350px;
+      display: flex;
+      justify-content: end;
+      width: 100%;
     }
 
     &__card-opacity {
@@ -512,7 +518,7 @@
   justify-content: space-between;
 
   &__item {
-    padding-left: 38px;
+    padding: 0 38px;
   }
 }
 
@@ -531,7 +537,6 @@
   &__up {
     display: flex;
     justify-content: space-between;
-    margin-right: 31px;
   }
 
   // .item__logo
@@ -592,8 +597,48 @@
   &__container2 {
     display: flex;
     margin: 0 auto;
+    align-items: center;
   }
 }
 
 
-
+@media (max-width: 1200px) {
+  .main {
+    &-application {
+      padding: 0 30px;
+    }
+    &-experience {
+      padding: 60px 30px;
+    }
+    &-about {
+      padding: 0 30px;
+    }
+    &-help {
+      padding: 34px 30px;
+    }
+    &-category__top {
+      padding: 34px 30px;
+    }
+    &-spare {
+      padding: 50px 30px;
+      &__img {
+        margin-right: 50px;
+        &_back {
+          top: 80px;
+        }
+      }
+    }
+    &-about-big {
+      padding: 0 30px;
+    }
+  }
+  .card-list {
+    padding: 0 30px;
+  }
+  .item {
+    width: 300px;
+    &__text {
+      margin-bottom: 50px;
+    }
+  }
+}
