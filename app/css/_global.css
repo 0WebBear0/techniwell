@@ -16,8 +16,6 @@ body{
 	min-height: 100%;
 }
 
-
-
 .main {
 	flex: 1 0 auto;
 }
@@ -42,6 +40,10 @@ body{
   margin: 0 auto;
 }
 
+._container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 /*
 для теста 

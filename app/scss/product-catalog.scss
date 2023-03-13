@@ -1,0 +1,51 @@
+
+.product-catalog {
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 46px;
+    }
+    // .product-catalog__page
+
+    &__page {
+        color: black;
+        font-size: 38px;
+        line-height: 65px;
+    }
+    &__go-back{
+
+    }
+    &__card-list {
+    }
+    }
+
+.product-catalog {
+
+		// .product-catalog__card-list
+
+		
+}
+.card {
+
+		// .card__img
+
+		&__img {
+		}
+
+		// .card__title
+
+		&__title {
+		}
+
+		// .card__text
+
+		&__text {
+            color: aqua;
+		}
+
+		// .card__link
+
+		&__link {
+		}
+}
+
