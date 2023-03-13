@@ -277,7 +277,10 @@
 }
 
 /*----------------------------------------*/
-
+.page-padding {
+  max-width: 1200px;
+  padding: 0 375px 0 375px;
+}
 
 
 @media (max-width: 900px) {
