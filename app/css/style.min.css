@@ -185,16 +185,24 @@
 .main-list__description {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 50px;
 }
 .main-list__line {
+  margin-top: 22px;
   margin-bottom: 22px;
+}
+.main-list__line_first {
+  margin-bottom: 22px;
+}
+.main-list__line_bottom {
+  margin-top: 22px;
 }
 .main-list__text {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: #1D1717;
-  margin-bottom: 28px;
 }
 .main-list__arrow {
   margin-right: 68px;

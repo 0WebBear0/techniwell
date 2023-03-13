@@ -279,6 +279,8 @@
     &__description {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      gap: 50px;
     }
 
     // .list__item
@@ -289,7 +291,15 @@
     // .list__line
 
     &__line {
+      margin-top: 22px;
       margin-bottom: 22px;
+
+      &_first{
+        margin-bottom: 22px;
+      }
+      &_bottom{
+        margin-top: 22px;
+      }
     }
 
     // .list__text
@@ -299,7 +309,6 @@
       font-size: 18px;
       line-height: 30px;
       color: $text;
-      margin-bottom: 28px;
     }
 
     // .list__arrow
