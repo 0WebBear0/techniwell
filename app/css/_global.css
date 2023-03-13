@@ -42,7 +42,10 @@ body{
   max-width: 1200px;
   margin: 0 auto;
 }
-
+.container_{
+  max-width: 1166px;
+  margin: 0 auto;
+}
 /*
 для теста 
 
