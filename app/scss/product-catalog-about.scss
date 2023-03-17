@@ -8,7 +8,11 @@
             color: black;
             font-size: 38px;
             line-height: 65px;
-    
+
+            &__card-list{
+                display: flex;
+                margin-bottom: 35px;
+            }
     
     &__top{
         display: flex;
@@ -84,32 +88,37 @@
 }
 
 @media (max-width: 950px) {
-    .card-list-catalog-about{
+    .product-catalog-about{
+    &__card-list{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         justify-items: center; 
-    }
+    }}
 }
 @media (max-width: 660px) {
     .product-catalog-about{
         &__top{
             flex-direction: column;
-            margin-bottom: 20px;
+            margin-bottom: 53px;
             align-items: center;
+        }
+        &__go-back{
+            display: none;
         }
     }
 }
 @media (max-width: 520px) {
 
-    .card-list-catalog-about{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        justify-items: center; 
+    .product-catalog-about{
+        &__card-list{
+            grid-template-columns: repeat(1,1fr);
+        }}
     }
-}
+
 @media (max-width: 360px) {
 
     .card-list-catalog-about{
-
+        font-size: 32px;
+        line-height: 65px;
     }
 }
