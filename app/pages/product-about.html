@@ -14,8 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    @@include('../components/header.html')
-    <main class="main">
+    <div class="wrapper">
+        @@include('../components/header-black.html', {"class": "base"})
+        <main class="main">
             <div class="_container">
                 <div class="product-about-wrapper">
                     <div class="product-about-wrapper__name name">
@@ -44,7 +45,8 @@
                     </div>
                 </div>
             </div>
-</main>
-    @@include('../components/footer.html')
+        </main>
+        @@include('../components/footer.html')
+    </div>
 </body>
 </html>

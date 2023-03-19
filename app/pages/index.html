@@ -18,7 +18,9 @@
     @@include('../components/header.html', {"class": "main"})
     <main class="main">
         @@include('../components/index/main-block.html')
-        @@include('../components/index/about-company-block.html')
+        <div id="about">
+            @@include('../components/index/about-company-block.html')
+        </div>
         @@include('../components/index/help-block.html')
         @@include('../components/index/main-category-block.html')
         @@include('../components/index/main-spare-block.html')

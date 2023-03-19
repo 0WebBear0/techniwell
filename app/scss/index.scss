@@ -534,9 +534,6 @@
   }
 }
 
-/*----------------------------------------*/
-
-/*----------------------------------------*/
 .card-list {
   margin-bottom: 109px;
   display: flex;
@@ -608,14 +605,12 @@
   }
 }
 
-
 .main__img {
   &__container1 {
     min-width: 1200px;
     margin: 0 auto;
   }
 }
-
 
 .main-help {
   &__container2 {
@@ -625,7 +620,6 @@
     align-items: center;
   }
 }
-
 
 @media (max-width: 1200px) {
   .main {
