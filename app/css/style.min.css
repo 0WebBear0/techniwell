@@ -863,6 +863,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 135px;
 }
 .spare-parts-page__input {
   padding: 20px 70px 20px 70px;
@@ -890,6 +891,62 @@
 }
 .spare-parts-page__filter svg {
   margin-right: 21px;
+}
+.spare-parts-page__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 130px;
+  align-items: center;
+  margin-bottom: 45px;
+}
+.spare-parts-page__card-name {
+  display: flex;
+}
+.spare-parts-page__category--active {
+  padding: 5px 16px;
+  border: 1px solid #D82329;
+}
+.spare-parts-page__line {
+  border-bottom: 2px solid #1D1717;
+  margin-bottom: 45px;
+}
+
+.spare-title-category {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  gap: 94px;
+  font-size: 20px;
+  line-height: 30px;
+}
+.spare-title-category__name {
+  margin-left: 70px;
+  display: flex;
+}
+.card-name-spare {
+  margin-left: 47px;
+  align-items: center;
+}
+.card-name-spare__img {
+  margin-right: 50px;
+}
+@media (max-width: 1088px) {
+  .spare-parts-page__top {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .spare-parts-page__input {
+    margin-bottom: 22px;
+  }
+}
+@media (max-width: 639px) {
+  .spare-parts-page__input {
+    padding: 20px 10px;
+  }
+  .spare-parts-page__filter {
+    padding: 20px 110px;
+  }
 }
 .product-about-wrapper {
   color: black;
