@@ -70,6 +70,7 @@
 
   &-about {
     padding: 0 30px 20px 30px;
+
     img {
       margin-bottom: 125px;
     }
@@ -118,7 +119,7 @@
   }
 
   &-help {
-    padding: 77px 0px 34px 0px;
+    padding: 77px 0;
     display: flex;
     background-color: #3B4956;
     // .help__info
@@ -133,7 +134,6 @@
     &__title {
       font-size: 38px;
       line-height: 50px;
-      margin-top: 30px;
       margin-bottom: 40px;
     }
 
@@ -153,42 +153,46 @@
     &__img {
       cursor: pointer;
       @include transition();
-
       &:hover {
         @include transform();
+      }
+
+      img {
+        max-height: 280px;
+        min-height: 280px;
+        min-width: 360px;
       }
     }
   }
 
   &-spare {
-    &__container_max {
+    width: 100%;
+    background-color: #3B4956;
+
+    &__container {
+      margin-bottom: 88px;
+      // .spare__img
+      margin-top: 100px;
+      padding: 114px 0 114px 0;
       display: flex;
-      max-width: 1200px;
-      width: 100%;
-      margin: 0 auto;
-      padding: 0;
       align-items: center;
       position: relative;
     }
-
-    margin-bottom: 88px;
-    background-color: #3B4956;
-
-    // .spare__img
-    margin-top: 100px;
-    padding: 114px 0 114px 0px;
-    display: flex;
-
     &__img {
       margin-right: 154px;
       height: 374px;
       z-index: 10;
 
+      img {
+        min-height: 350px;
+        object-fit: cover;
+      }
+
       &_back {
         position: absolute;
-        top: 45px;
+        top: 30%;
         left: 0;
-        margin-left: -200px;
+        margin-left: -100px;
         height: 283px;
         opacity: 0.5;
       }
@@ -272,6 +276,7 @@
 
     &__list {
       font-size: 0 !important;
+
       &_mobile {
         display: none;
       }
@@ -379,17 +384,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 
     &__button {
       display: none;
     }
+
     &__top {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      padding: 72px 150px 30px 0;
+      padding: 72px 0 30px 0;
       max-width: 1200px;
       width: 100%;
 
@@ -487,7 +493,6 @@
     }
 
     &__card-helper {
-      padding-left: calc(17% - 100px);
       position: relative;
       display: flex;
       justify-content: end;
@@ -597,7 +602,6 @@
 
 .main__img {
   &__container1 {
-    margin-right: 65px;
     min-width: 1200px;
     margin: 0 auto;
   }
@@ -606,8 +610,9 @@
 
 .main-help {
   &__container2 {
+    width: 100%;
     display: flex;
-    margin: 0 auto;
+    justify-content: space-between;
     align-items: center;
   }
 }
@@ -628,7 +633,7 @@
     }
 
     &-help {
-      padding: 34px 30px;
+      padding: 34px 0;
     }
 
     &-category__top {
@@ -640,10 +645,6 @@
 
       &__img {
         margin-right: 50px;
-
-        &_back {
-          top: 80px;
-        }
       }
     }
 
@@ -668,6 +669,7 @@
     &-application {
       margin-bottom: 95px;
       padding: 0 5px;
+
       &__title {
         font-weight: 700;
         font-size: 23px;
@@ -675,18 +677,22 @@
         margin-bottom: 30px;
         max-width: 400px;
       }
+
       &__text {
         font-weight: 500;
         font-size: 16px;
         line-height: 26px;
         max-width: 400px;
       }
+
       &__button {
         padding: 27px 55px;
       }
     }
+
     &-experience {
       padding: 40px 5px;
+
       &__title {
         font-size: 41px;
         line-height: 64px;
@@ -715,69 +721,86 @@
         line-height: 26px;
       }
     }
+
     &-about {
       padding: 0 5px;
       display: flex;
       flex-direction: column-reverse;
+
       &__title {
         font-weight: 600;
         font-size: 21px;
         line-height: 26px;
       }
+
       &__name {
         font-weight: 600;
         font-size: 21px;
         line-height: 26px;
       }
+
       &__text {
         font-weight: 500;
         font-size: 16px;
         line-height: 26px;
       }
+
       &__info {
         margin-bottom: 50px;
       }
+
       &__name {
         margin-bottom: 26px;
       }
+
       img {
         margin-bottom: 80px;
       }
     }
+
     &-help {
       padding: 40px 5px;
+
       &__container2 {
         display: flex;
         flex-direction: column;
       }
+
       &__title {
         font-weight: 700;
         font-size: 23px;
         line-height: 36px;
       }
+
       &__text {
         font-weight: 500;
         font-size: 16px;
         line-height: 26px;
       }
+
       &__info {
         margin-bottom: 50px;
         margin-right: 0;
       }
     }
+
     &-category {
       padding: 0 5px;
+
       &__top {
         justify-content: center;
+
         a {
           display: none;
         }
+
         h3 {
           font-weight: 700;
           font-size: 23px;
           line-height: 36px;
         }
       }
+
       &__button {
         margin-top: 50px;
         border-radius: 5px;
@@ -798,12 +821,14 @@
           @include transform();
         }
       }
-      &__card{
+
+      &__card {
         p {
           display: flex;
           justify-content: center;
         }
-        &-helper{
+
+        &-helper {
           padding-left: 0;
           width: 250px;
           display: flex;
@@ -811,46 +836,58 @@
         }
       }
     }
+
     &-spare {
       padding: 40px 10px;
+
       &__img {
         display: none;
+
         &_back {
           display: none;
         }
       }
+
       &__title {
         br {
           display: none;
         }
+
         max-width: 300px;
         font-weight: 700;
         font-size: 23px;
         line-height: 36px;
       }
+
       &__text {
         br {
           display: none;
         }
+
         max-width: 321px;
         font-weight: 500;
         font-size: 16px;
         line-height: 26px;
       }
     }
+
     &-about-big {
       padding: 0 10px;
       margin-bottom: 45px;
+
       &__img img {
         min-height: 240px;
         object-fit: cover;
       }
+
       &__info {
         display: flex;
         flex-direction: column;
       }
+
       &__list {
         display: none;
+
         &_mobile {
           display: block;
           margin-bottom: 30px;
@@ -864,22 +901,26 @@
         margin-bottom: 40px;
       }
     }
+
     &-list {
       &__text {
         font-weight: 500;
         font-size: 16px;
         line-height: 26px;
       }
+
       &__description {
         display: flex;
         flex-direction: column;
         align-items: start;
         gap: 15px;
       }
-      &__line{
+
+      &__line {
         margin-top: 11px;
         margin-bottom: 11px;
       }
+
       &__link {
         font-weight: 400;
         font-size: 16px;

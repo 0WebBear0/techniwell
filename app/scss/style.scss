@@ -10,6 +10,7 @@
   z-index: 10;
   margin-bottom: -200px;
   padding-top: 55px;
+
   // .header__inner
   &__mobile {
     display: none;
@@ -25,6 +26,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 37px;
+
   }
 
   // .header__menu-logo
@@ -47,7 +49,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    margin-right: 137px;
+    margin-right: 90px;
     max-width: 250px;
     cursor: pointer;
     @include transition();
@@ -81,15 +83,6 @@
 
 
   &__menu-phone {
-    svg {
-      margin-right: 20px;
-    }
-
-    img {
-      height: 42px;
-      margin-right: 19px;
-    }
-
     display: flex;
     align-items: center;
     font-weight: 400;
@@ -99,6 +92,15 @@
 
     &:hover {
       @include transform();
+    }
+    svg {
+      margin-right: 20px;
+      min-height: 42px;
+    }
+
+    img {
+      height: 42px;
+      margin-right: 19px;
     }
   }
 
@@ -214,7 +216,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    margin-right: 137px;
+    margin-right: 90px;
     max-width: 250px;
     cursor: pointer;
 
@@ -324,9 +326,12 @@
 
 /*----------------------------------------*/
 .page-padding {
-  max-width: 1200px;
-  padding: 0 375px 0 375px;
+  padding: 0 75px 0 75px;
+  &__left {
+    padding: 0 0 0 75px;
+  }
 }
+
 
 .modal {
   position: absolute;
@@ -342,7 +347,7 @@
     transition: all 0.5s ease-in-out;
     position: fixed;
     top: 0;
-    right: -1000px;
+    right: -2000px;
     padding: 35px 40px;
     background-color: #3B4956;
     opacity: 1;
