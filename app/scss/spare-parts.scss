@@ -1,0 +1,141 @@
+.spare-parts-page {
+    color: rgb(0, 0, 0);
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 135px;
+
+    }
+    &__input{
+        
+        padding:  20px 70px 20px 70px;
+        display: flex;
+        svg{
+            margin-right: 26px;
+        }
+        input{
+            border: none;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            outline:none;
+        }
+        margin-right: 26px;
+    }
+    &__filter{
+        svg{
+            margin-right: 21px;
+        }
+        display: flex;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        padding: 26px 240px 26px 240px;
+        background-color: #D82329;
+        color: white;
+    }
+    // .spare-parts-page__wrapper
+
+    &__wrapper {
+    }
+
+    // .spare-parts-page__list
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap:130px;
+        align-items: center;
+        margin-bottom: 45px;
+
+    }
+
+    // .spare-parts-page__card-name
+
+    &__card-name {
+        display: flex;
+    }
+
+    // .spare-parts-page__category
+
+    &__category {
+        
+    }
+    &__category--active{
+        padding:  5px 16px;
+        border: 1px solid #D82329;
+    }
+    // .spare-parts-page__line
+
+    &__line {
+        border-bottom: 2px solid #1D1717;
+        margin-bottom: 45px;
+    }
+}
+
+.spare-title-category {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    gap: 94px;
+        // .spare-title-category__name
+        font-size: 20px;
+        line-height: 30px;
+        &__name {
+    
+    margin-left: 70px;
+    
+    display: flex;
+    
+        }
+    
+        // .spare-title-category__category
+    
+        &__category {
+            
+        }
+    }
+    
+
+.card-name-spare {
+    margin-left: 47px;
+    align-items: center;
+    // .card-name-spare__img
+
+    &__img {
+        margin-right: 50px;
+    }
+
+    // .card-name-spare__text
+
+    &__text {
+    }
+}
+
+@media (max-width: 1088px) {
+    .spare-parts-page{
+        &__top{
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 60px;
+
+        }
+        &__input{
+            margin-bottom: 22px;
+        }
+    }
+
+}
+@media (max-width: 639px) {
+    .spare-parts-page{
+        &__input{
+            padding:  20px 10px;
+        }
+        &__filter{
+            padding: 20px 110px;
+        }
+    }
+}
+
+
