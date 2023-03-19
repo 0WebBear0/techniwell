@@ -70,6 +70,7 @@
 
   &-about {
     padding: 0 30px 20px 30px;
+
     img {
       margin-bottom: 125px;
     }
@@ -118,7 +119,7 @@
   }
 
   &-help {
-    padding: 77px 0px 34px 0px;
+    padding: 77px 0 34px 0;
     display: flex;
     background-color: #3B4956;
     // .help__info
@@ -272,6 +273,7 @@
 
     &__list {
       font-size: 0 !important;
+
       &_mobile {
         display: none;
       }
@@ -384,6 +386,7 @@
     &__button {
       display: none;
     }
+
     &__top {
       display: flex;
       flex-direction: row;
@@ -597,7 +600,6 @@
 
 .main__img {
   &__container1 {
-    margin-right: 65px;
     min-width: 1200px;
     margin: 0 auto;
   }
@@ -668,6 +670,7 @@
     &-application {
       margin-bottom: 95px;
       padding: 0 5px;
+
       &__title {
         font-weight: 700;
         font-size: 23px;
@@ -675,18 +678,22 @@
         margin-bottom: 30px;
         max-width: 400px;
       }
+
       &__text {
         font-weight: 500;
         font-size: 16px;
         line-height: 26px;
         max-width: 400px;
       }
+
       &__button {
         padding: 27px 55px;
       }
     }
+
     &-experience {
       padding: 40px 5px;
+
       &__title {
         font-size: 41px;
         line-height: 64px;
@@ -715,69 +722,86 @@
         line-height: 26px;
       }
     }
+
     &-about {
       padding: 0 5px;
       display: flex;
       flex-direction: column-reverse;
+
       &__title {
         font-weight: 600;
         font-size: 21px;
         line-height: 26px;
       }
+
       &__name {
         font-weight: 600;
         font-size: 21px;
         line-height: 26px;
       }
+
       &__text {
         font-weight: 500;
         font-size: 16px;
         line-height: 26px;
       }
+
       &__info {
         margin-bottom: 50px;
       }
+
       &__name {
         margin-bottom: 26px;
       }
+
       img {
         margin-bottom: 80px;
       }
     }
+
     &-help {
       padding: 40px 5px;
+
       &__container2 {
         display: flex;
         flex-direction: column;
       }
+
       &__title {
         font-weight: 700;
         font-size: 23px;
         line-height: 36px;
       }
+
       &__text {
         font-weight: 500;
         font-size: 16px;
         line-height: 26px;
       }
+
       &__info {
         margin-bottom: 50px;
         margin-right: 0;
       }
     }
+
     &-category {
       padding: 0 5px;
+
       &__top {
         justify-content: center;
+
         a {
           display: none;
         }
+
         h3 {
           font-weight: 700;
           font-size: 23px;
           line-height: 36px;
         }
       }
+
       &__button {
         margin-top: 50px;
         border-radius: 5px;
@@ -798,12 +822,14 @@
           @include transform();
         }
       }
-      &__card{
+
+      &__card {
         p {
           display: flex;
           justify-content: center;
         }
-        &-helper{
+
+        &-helper {
           padding-left: 0;
           width: 250px;
           display: flex;
@@ -811,46 +837,58 @@
         }
       }
     }
+
     &-spare {
       padding: 40px 10px;
+
       &__img {
         display: none;
+
         &_back {
           display: none;
         }
       }
+
       &__title {
         br {
           display: none;
         }
+
         max-width: 300px;
         font-weight: 700;
         font-size: 23px;
         line-height: 36px;
       }
+
       &__text {
         br {
           display: none;
         }
+
         max-width: 321px;
         font-weight: 500;
         font-size: 16px;
         line-height: 26px;
       }
     }
+
     &-about-big {
       padding: 0 10px;
       margin-bottom: 45px;
+
       &__img img {
         min-height: 240px;
         object-fit: cover;
       }
+
       &__info {
         display: flex;
         flex-direction: column;
       }
+
       &__list {
         display: none;
+
         &_mobile {
           display: block;
           margin-bottom: 30px;
@@ -864,22 +902,26 @@
         margin-bottom: 40px;
       }
     }
+
     &-list {
       &__text {
         font-weight: 500;
         font-size: 16px;
         line-height: 26px;
       }
+
       &__description {
         display: flex;
         flex-direction: column;
         align-items: start;
         gap: 15px;
       }
-      &__line{
+
+      &__line {
         margin-top: 11px;
         margin-bottom: 11px;
       }
+
       &__link {
         font-weight: 400;
         font-size: 16px;
