@@ -10,31 +10,9 @@ body{
     color: rgb(255, 255, 255);
     font-style: normal;
 }
-.wrapper {
-	display: flex;
-	flex-direction: column;
-	min-height: 100%;
-}
-
-.main {
-	flex: 1 0 auto;
-}
-.footer {
-	flex: 0 0 auto;
-}
 
 .container{
   max-width: 100%;
-  margin: 0 auto;
-}
-
-.container_min{
-  min-width: 1200px;
-  margin: 0 auto;
-}
-
-.container_max{
-  max-width: 1200px;
   margin: 0 auto;
 }
 

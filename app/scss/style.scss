@@ -8,9 +8,17 @@
 /*----------------------------------------*/
 .header {
   z-index: 10;
-  margin-bottom: -200px;
   padding-top: 55px;
+  width: 100%;
 
+  &.main {
+    &.header {
+      margin-top: 50px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
   // .header__inner
   &__mobile {
     display: none;
@@ -34,7 +42,7 @@
   &__menu-logo {
     font-size: 30px;
     line-height: 37px;
-    margin-right: 81px;
+    margin-right: 54px;
     cursor: pointer;
     @include transition();
 
@@ -49,7 +57,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    margin-right: 90px;
+    margin-right: 75px;
     max-width: 250px;
     cursor: pointer;
     @include transition();
@@ -181,21 +189,15 @@
     color: $text;
   }
 
-  margin-bottom: 89px;
-  // .header__inner
-
-  &__inner {
-  }
-
-  // .header__menu
-
   &__menu {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
   }
 
-  // .header__menu-logo
+  &__sub-menu {
+    padding-bottom: 50px;
+  }
 
   &__menu-logo {
     font-size: 30px;
@@ -209,8 +211,6 @@
       @include transform();
     }
   }
-
-  // .header__menu-text
 
   &__menu-text {
     font-weight: 400;
@@ -326,9 +326,9 @@
 
 /*----------------------------------------*/
 .page-padding {
-  padding: 0 75px 0 75px;
+  padding: 0 440px;
   &__left {
-    padding: 0 0 0 75px;
+    padding: 0 0 0 440px;
   }
 }
 
@@ -371,12 +371,58 @@
     }
   }
 }
+@media (max-width: 1950px) {
+  .page-padding {
+    padding: 0 250px;
+    &__left {
+      padding: 0 0 0 250px;
+    }
+    &__right {
+      padding-right: 250px;
+    }
+  }
+}
+
+@media (max-width: 1800px) {
+  .page-padding {
+    padding: 0 200px;
+    &__left {
+      padding: 0 0 0 200px;
+    }
+    &__right {
+      padding-right: 200px;
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .page-padding {
+    padding: 0 120px;
+    &__left {
+      padding: 0 0 0 120px;
+    }
+    &__right {
+      padding-right: 120px;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .page-padding {
+    padding: 0 75px;
+    &__left {
+      padding: 0 0 0 75px;
+    }
+    &__right {
+      padding-right: 75px;
+    }
+  }
+}
 
 @media (max-width: 1200px) {
 
 
   .header {
-    padding: 55px 30px 0 30px;
     &__menu {
       &-logo {
         margin-right: 30px;
@@ -395,7 +441,6 @@
     }
   }
   .footer {
-    padding: 55px 30px 0 30px;
     &__menu {
       &-logo {
         margin-right: 30px;
@@ -411,8 +456,16 @@
 }
 
 @media (max-width: 930px) {
+  .page-padding {
+    padding: 0 30px;
+    &__left {
+      padding: 0 0 0 30px;
+    }
+    &__right {
+      padding-right: 30px;
+    }
+  }
   .header {
-    padding: 29px 5px 0 5px;
     &__sub-menu {
       display: flex;
       flex-direction: column;
@@ -441,7 +494,6 @@
     }
   }
   .footer {
-    padding: 0 5px;
     &__inner {
       padding: 0 15px;
     }
@@ -467,6 +519,34 @@
           display: none;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .page-padding {
+    padding: 0 15px;
+    &__left {
+      padding: 0 0 0 15px;
+    }
+    &__right {
+      padding-right: 15px;
+    }
+  }
+  .main-about__doc {
+    display: contents;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-padding {
+    padding: 0 5px;
+    &__left {
+      padding: 0 0 0 5px;
+    }
+    &__right {
+      padding-right: 5px;
     }
   }
 }

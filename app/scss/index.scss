@@ -84,6 +84,7 @@
     // .about__info
 
     &__info {
+      margin-bottom: 125px;
     }
 
     // .about__title
@@ -153,6 +154,7 @@
     &__img {
       cursor: pointer;
       @include transition();
+
       &:hover {
         @include transform();
       }
@@ -178,6 +180,7 @@
       align-items: center;
       position: relative;
     }
+
     &__img {
       margin-right: 154px;
       height: 374px;
@@ -339,7 +342,7 @@
 
     position: relative;
     z-index: 100;
-    margin-bottom: 125px;
+    margin-bottom: 80px;
     // .aplication__title
 
     &__title {
@@ -357,7 +360,7 @@
       line-height: 30px;
       color: #FFFFFF;
       max-width: 522px;
-      margin-bottom: 40px;
+      margin-bottom: 80px;
     }
 
     // .aplication__button
@@ -395,8 +398,8 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      padding: 72px 0 30px 0;
-      max-width: 1200px;
+      padding-top: 72px;
+      padding-bottom: 30px;
       width: 100%;
 
       h3 {
@@ -497,6 +500,12 @@
       display: flex;
       justify-content: end;
       width: 100%;
+
+      &__wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
     }
 
     &__card-opacity {
@@ -626,6 +635,18 @@
 
     &-experience {
       padding: 60px 30px;
+
+      &__title {
+        font-size: 65px;
+      }
+
+      &__plus {
+        font-size: 65px;
+      }
+
+      &__text {
+        font-size: 16px;
+      }
     }
 
     &-about {
@@ -637,7 +658,7 @@
     }
 
     &-category__top {
-      padding: 34px 30px;
+      padding: 34px 30px 34px 0;
     }
 
     &-spare {
@@ -726,6 +747,11 @@
       padding: 0 5px;
       display: flex;
       flex-direction: column-reverse;
+
+      &__doc {
+        display: block;
+        //margin-right: 87px;
+      }
 
       &__title {
         font-weight: 600;
@@ -830,9 +856,16 @@
 
         &-helper {
           padding-left: 0;
-          width: 250px;
+          width: 540px;
           display: flex;
           flex-direction: column;
+          align-items: center;
+
+          &__wrapper {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+          }
         }
       }
     }
@@ -940,5 +973,22 @@
   }
   .item {
     width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .main-category {
+    &__card-helper {
+      padding-left: 0;
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .main-help__img img {
+    max-height: 200px;
+    min-height: 200px;
+    min-width: 280px;
   }
 }
