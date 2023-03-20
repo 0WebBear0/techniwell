@@ -25,28 +25,29 @@
             <div class="header__sub-menu-item-square">
                 <div class="sub-menu-item-square__title">
                     <img src="img/header/03.png" alt="">
-                    <a href="" class="header__link">Главная</a></div>
-                <img src="img/header/04.png" alt="" class="header__line">
+                    <a href="" class="header__link">Главная</a>
+                </div>
+                <div class="splitter__white"></div>
             </div>
             <div class="header__sub-menu-item">
                 <a href="/product-about.html" class="header__link">Каталог техники</a>
-                <img src="img/header/04.png" alt="" class="header__line">
+                <div class="splitter__white"></div>
             </div>
             <div class="header__sub-menu-item">
                 <a href="/product-catalog.html" class="header__link">Каталог запчастей</a>
-                <img src="img/header/04.png" alt="" class="header__line">
+                <div class="splitter__white"></div>
             </div>
             <div class="header__sub-menu-item">
                 <a href="#about" class="header__link">О компании</a>
-                <img src="img/header/04.png" alt="" class="header__line">
+                <div class="splitter__white"></div>
             </div>
             <div class="header__sub-menu-item">
                 <a href="/product-catalog-about.html" class="header__link">Статьи</a>
-                <img src="img/header/04.png" alt="" class="header__line">
+                <div class="splitter__white"></div>
             </div>
         </nav>
     </div>
-    <div class="header__mobile page-padding">
+    <div class="header__mobile">
         <div class="header__left">
             <a href="" class="header__menu-logo"><img src="img/header/logo.svg" alt=""></a>
             <div class="header__menu-mail">
@@ -85,24 +86,25 @@
             <div class="header__sub-menu-item-square">
                 <div class="sub-menu-item-square__title">
                     <img src="../img/header/03.png" alt="">
-                    <a href="" class="header__link">Главная</a></div>
-                <img src="../img/header/04.png" alt="" class="header__line">
+                    <a href="" class="header__link">Главная</a>
+                </div>
+                <div class="splitter__white"></div>
             </div>
             <div class="header__sub-menu-item">
                 <a href="/product-information.html" class="header__link">Каталог техники</a>
-                <img src="../img/header/04.png" alt="" class="header__line">
+                <div class="splitter__white"></div>
             </div>
             <div class="header__sub-menu-item">
                 <a href="/product-catalog.html" class="header__link">Каталог запчастей</a>
-                <img src="../img/header/04.png" alt="" class="header__line">
+                <div class="splitter__white"></div>
             </div>
             <div class="header__sub-menu-item">
                 <a href="" class="header__link">О компании</a>
-                <img src="../img/header/04.png" alt="" class="header__line">
+                <div class="splitter__white"></div>
             </div>
             <div class="header__sub-menu-item">
                 <a href="" class="header__link">Статьи</a>
-                <img src="../img/header/04.png" alt="" class="header__line">
+                <div class="splitter__white"></div>
             </div>
         </nav>
     </div>
@@ -110,8 +112,10 @@
 <script>
     document.getElementsByClassName("modal__burger")[0].addEventListener("click", ()=> {
         document.getElementById("burgerIndex").classList.add("open")
+        document.getElementsByClassName("modal")[0].style.zIndex = "101"
     })
     document.getElementsByClassName("modal__back")[0].addEventListener("click", ()=> {
         document.getElementById("burgerIndex").classList.remove("open")
+        document.getElementsByClassName("modal")[0].style.zIndex = "-1"
     })
 </script>
