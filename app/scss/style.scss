@@ -52,8 +52,8 @@
   &__menu {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 37px;
-
   }
 
   // .header__menu-logo
@@ -206,6 +206,7 @@
   &__menu {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 37px;
   }
   &__email {

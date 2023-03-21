@@ -8,3 +8,7 @@ $text: #1D1717;
 @mixin transform {
   transform: scale(1.05);
 }
+
+@mixin transformS($scale) {
+  transform: scale($scale);
+}

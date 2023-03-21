@@ -753,6 +753,7 @@
   color: black;
   font-size: 38px;
   line-height: 65px;
+  padding-bottom: 100px;
 }
 .product-catalog__top {
   margin-bottom: 85px;
@@ -812,6 +813,9 @@
 }
 .product-catalog-about__card-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
   margin-bottom: 35px;
 }
 .product-catalog-about__top {
@@ -822,14 +826,17 @@
 .product-catalog-about__go-back {
   font-size: 18px;
   line-height: 65px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.product-catalog-about__go-back:hover {
+  transform: scale(1.05);
 }
 .product-catalog-about__card-list-catalog {
   margin-bottom: 35px;
   display: flex;
-}
-.product-catalog-about__go-back {
-  display: flex;
-  align-items: center;
 }
 .product-catalog-about__arrow {
   margin-right: 30px;
@@ -839,6 +846,13 @@
   margin-right: 35px;
   max-width: 270px;
   padding: 31px 35px 38px;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 20px 10px rgba(210, 210, 210, 0.25);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
 }
 .card__img {
   margin-bottom: 36px;
@@ -900,6 +914,7 @@
 }
 .spare-parts-page {
   color: rgb(0, 0, 0);
+  margin-bottom: 120px;
 }
 .spare-parts-page__top {
   display: flex;
@@ -908,31 +923,42 @@
   margin-bottom: 135px;
 }
 .spare-parts-page__input {
-  padding: 20px 70px 20px 70px;
+  padding: 26px 70px 26px 70px;
   display: flex;
+  background: #F2F2F2;
+  width: 100%;
   margin-right: 26px;
 }
 .spare-parts-page__input svg {
   margin-right: 26px;
 }
 .spare-parts-page__input input {
+  width: 100%;
   border: none;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   outline: none;
+  background: #F2F2F2;
 }
 .spare-parts-page__filter {
   display: flex;
+  justify-content: center;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  padding: 26px 240px 26px 240px;
+  width: 100%;
+  padding: 26px;
   background-color: #D82329;
   color: white;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 .spare-parts-page__filter svg {
   margin-right: 21px;
+}
+.spare-parts-page__filter:hover {
+  transform: scale(1.01);
 }
 .spare-parts-page__list {
   display: flex;
@@ -992,6 +1018,7 @@
 }
 .product-about-wrapper {
   color: black;
+  padding-bottom: 40px;
 }
 
 .name {
@@ -1107,6 +1134,7 @@
 .header__menu {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 37px;
 }
 .header__menu-logo {
@@ -1209,6 +1237,7 @@
 .header-black__menu {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 37px;
 }
 .header-black__email {
