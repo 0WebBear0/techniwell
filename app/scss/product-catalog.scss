@@ -33,14 +33,16 @@
 }
 
 .product-catalog-card {
-  display: flex;
   flex-direction: column;
   max-width: 230px;
   // .product-catalog-card__img
 
   &__img {
-
-    object-fit: fill;
+    img{
+      object-fit: contain;
+      width: 230px;
+      height: 230px;
+    }
 
   }
 

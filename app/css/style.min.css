@@ -766,12 +766,13 @@
 }
 
 .product-catalog-card {
-  display: flex;
   flex-direction: column;
   max-width: 230px;
 }
-.product-catalog-card__img {
-  object-fit: fill;
+.product-catalog-card__img img {
+  object-fit: contain;
+  width: 230px;
+  height: 230px;
 }
 .product-catalog-card__title {
   font-size: 16px;
