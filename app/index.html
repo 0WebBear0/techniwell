@@ -147,7 +147,7 @@
         <div class="main-application__text">Мировой лидер в разработке и производстве оборудования для
             струйной цементации, цементации и смесительных установок
         </div>
-        <a class="main-application__button">Оставить заявку</a>
+        <a class="main-application__button popup__button">Оставить заявку</a>
     </section>
     <section class="main-experience">
         <div class="main-experience__inner page-padding">
@@ -174,6 +174,62 @@
     </section>
 </div>
         <div id="about">
+            <div id="popupIndex" class="popup">
+    <div class="popup__back"></div>
+    <div class="popup__base">
+        <div class="popup__cross">
+            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L22 22" stroke="white" stroke-width="2.37736"/>
+                <path d="M22 1L1 22" stroke="white" stroke-width="2.37736"/>
+            </svg>
+        </div>
+        <div class="popup__items">
+            <div class="popup__item">
+                <label for="inputName">Ваше имя</label>
+                <input id="inputName" class="popup__input" placeholder="Введите ваше имя" />
+            </div>
+            <div class="popup__item">
+                <label for="inputEmail">E-mail</label>
+                <input id="inputEmail" class="popup__input" placeholder="Введите ваш e-mail" />
+            </div>
+            <div class="popup__item">
+                <label for="inputPhone">Ваш телефон</label>
+                <input id="inputPhone" class="popup__input" placeholder="Введите ваш телефон" />
+            </div>
+            <div class="popup__item">
+                <button class="popup__send">
+                    Оставить заявку
+                </button>
+            </div>
+            <div class="popup__item">
+                <p class="popup__helper-text">
+                    Нажимая на кнопку, Вы принимаете Положение и Согласие на обработку персональных данных
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('popupIndex').classList.add('open')
+        document.getElementsByClassName('popup')[0].style.zIndex = '101'
+
+        document.getElementsByClassName('popup__button')[0].addEventListener('click', () => {
+            document.getElementById('popupIndex').classList.add('open')
+            document.getElementsByClassName('popup')[0].style.zIndex = '101'
+        })
+
+        document.getElementsByClassName('popup__back')[0].addEventListener('click', () => {
+            document.getElementById('popupIndex').classList.remove('open')
+            document.getElementsByClassName('popup')[0].style.zIndex = '-1'
+        })
+
+        document.getElementsByClassName('popup__cross')[0].addEventListener('click', () => {
+            document.getElementById('popupIndex').classList.remove('open')
+            document.getElementsByClassName('popup')[0].style.zIndex = '-1'
+        })
+    })
+</script>
             <section class="card-list page-padding">
     <div class="card-list__item item">
         <div class="item__up">

@@ -1556,6 +1556,114 @@
   right: 0;
 }
 
+.popup {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+.popup__helper-text {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  cursor: default;
+  color: #000000;
+}
+.popup__send {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+  background: #D82329;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 27px;
+}
+.popup__input {
+  padding: 20px 30px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  border: 1px solid #343434;
+  border-radius: 2px;
+  outline: none;
+  transition: all 0.3s;
+}
+.popup__input:focus {
+  border: 1px solid rgba(52, 52, 52, 0.5);
+}
+.popup__items {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+.popup__items label {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #0B2432;
+}
+.popup__item {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.popup__cross {
+  width: 50px;
+  height: 50px;
+  background: #E43232;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  margin-top: -20px;
+  margin-right: -20px;
+  right: 0;
+  top: 0;
+}
+.popup__back {
+  transition: all 0.5s ease-in-out;
+}
+.popup__base {
+  transition: all 0.5s ease-in-out;
+  position: fixed;
+  top: 50px;
+  left: calc(50% - 259px);
+  padding: 50px;
+  background-color: white;
+  box-shadow: 0 0 50px rgba(21, 60, 83, 0.2);
+  opacity: 0;
+  width: 70%;
+  height: max-content;
+  max-width: 518px;
+  max-height: 687px;
+  z-index: 1001;
+}
+.popup.open .popup__back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+.popup.open .popup__base {
+  opacity: 1;
+}
+
 @media (max-width: 1950px) {
   .page-padding {
     padding: 0 250px;
@@ -1729,6 +1837,23 @@
   .main-about__doc {
     display: contents;
     margin-right: 0;
+  }
+}
+@media (max-width: 550px) {
+  .popup__base {
+    padding: 50px 30px;
+    width: 95%;
+    left: 2.5%;
+  }
+  .popup__input {
+    font-size: 14px;
+  }
+  .popup__send {
+    padding: 20px;
+    font-size: 16px;
+  }
+  .popup__helper-text {
+    font-size: 12px;
   }
 }
 @media (max-width: 480px) {
