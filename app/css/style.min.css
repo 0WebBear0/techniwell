@@ -1388,18 +1388,25 @@
   display: flex;
   flex-direction: column;
   transition: all 0.3s;
+  position: relative;
+  margin-bottom: 2px;
 }
 .header__sub-menu-item:hover {
   transform: scale(1.05);
 }
-.header__sub-menu-item-square {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  transition: all 0.3s;
+.header__sub-menu-item--square {
+  position: relative;
 }
-.header__sub-menu-item-square:hover {
-  transform: scale(1.05);
+.header__sub-menu-item--square::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/header/03.png);
+  height: 7px;
+  width: 7px;
+  bottom: 12px;
+}
+.header__sub-menu-item--square a {
+  margin-left: 17px;
 }
 .header-black {
   z-index: 10;
