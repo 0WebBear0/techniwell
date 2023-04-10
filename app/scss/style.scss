@@ -473,6 +473,9 @@
   &__sub-menu-logo {
   }
 
+
+
+
   &__sub-menu-item {
     width: 100%;
     font-weight: 500;
@@ -481,32 +484,23 @@
     display: flex;
     flex-direction: column;
     @include transition();
-
     &:hover {
       @include transform();
-    }
-
-    &-square {
-      @include transition();
-
-      &:hover {
-        @include transform();
-      }
     }
   }
 
-  &__sub-menu-item-square {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    @include transition();
-
-    &:hover {
-      @include transform();
+  &__sub-menu-item--square {
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        background-image: url(../img/header/03.png);  
+        height: 7px;
+        width: 7px;
+        bottom: 12px;
     }
-
-    a {
-      color: black;
+    a{
+      margin-left: 17px;
     }
   }
 

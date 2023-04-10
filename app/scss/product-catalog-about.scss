@@ -24,9 +24,10 @@
 
 
   &__go-back {
+    
     font-size: 18px;
     line-height: 65px;
-    display: flex;
+    
     align-items: center;
     cursor: pointer;
     @include transition();
@@ -39,9 +40,16 @@
     margin-bottom: 35px;
     display: flex
   }
-
+  &__go-back-box{
+    display: flex;
+  }
   &__arrow {
     margin-right: 30px;
+    margin-top: 3px;
+  }
+  &__button{
+    color: #1D1717;
+    text-decoration-line: underline;
   }
 }
 
@@ -53,7 +61,6 @@
 
   background: #FFFFFF;
   box-shadow: 4px 4px 20px 10px rgba(210, 210, 210, 0.25);
-  cursor: pointer;
   @include transition();
   &:hover {
     @include transform()
@@ -61,6 +68,9 @@
 
   &__img {
     margin-bottom: 36px;
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
   }
 
   // .card__title
@@ -69,6 +79,7 @@
     margin-bottom: 9px;
     font-size: 20px;
     line-height: 24px;
+
   }
 
   // .card__text
@@ -78,6 +89,8 @@
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 20px;
+    max-width: 200px;
+    color: #000;
   }
 
   // .card__link
@@ -88,10 +101,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-
-    a {
-      color: #D82329;
-    }
+    color: #D82329;
   }
 }
 
