@@ -146,6 +146,9 @@
   // .card-name-spare__img
 
   &__img {
+    width: 60;
+    height: 60;
+    object-fit: contain;
     margin-right: 50px;
   }
 

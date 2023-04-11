@@ -10,6 +10,7 @@ body{
     font-size: 18px;
     color: rgb(255, 255, 255);
     font-style: normal;
+    overflow-x: hidden;
 }
 
 .container{
@@ -25,12 +26,4 @@ body{
   max-width: 1166px;
   margin: 0 auto;
 }
-/*
-для теста 
 
-@media (max-width: 900px) {
-	body {
-		background-color: red;
-	}
-}
-*/
