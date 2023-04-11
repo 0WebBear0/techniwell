@@ -14,38 +14,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
-        @@include('../components/header-black.html', {"class": "base"})
-        <main class="main">
-            <div class="_container">
-                <div class="product-about-wrapper">
-                    <div class="product-about-wrapper__name">
-                        <img class="product-about-wrapper__img product-about-image"src="img/product-information/1.png" alt="">
-                        <div class="product-about-wrapper__info">
+<div class="wrapper">
+    @@include('../components/header-black.html', {"class": "base"})
+    @@include('../components/modal.html')
+    <main class="main">
+        <div class="_container">
+            <div class="product-about-wrapper">
+                <div class="product-about-wrapper__name">
+                    <img class="product-about-wrapper__img product-about-image" src="img/product-information/1.png"
+                         alt="">
+                    <div class="product-about-wrapper__info">
                         <div class="product-about-wrapper__title">Название товара</div>
                         <div class="product-about-wrapper__text">Lorem Ipsum has been the industry's
-                                standard dummy text ever since the 1500s,
-                                when an unknown printer took a galley of
-                                type and scrambled it to make a type
-                                specimen book. It has survived not only
-                                five centuries, but also the leap into
-                                electronic typesetting,
+                            standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of
+                            type and scrambled it to make a type
+                            specimen book. It has survived not only
+                            five centuries, but also the leap into
+                            electronic typesetting,
                         </div>
-                        <a class="product-about-wrapper__button" href="#">Оставить заявку</a>
+                        <a class="product-about-wrapper__button popup__button" href="#">Оставить заявку</a>
                     </div>
-                    </div>
+                </div>
 
-                </div>
-                <div class="product-about-wrapper__images">
-                    <img  class="product-about-image" src="img/product-information/2.png" alt="">
-                    <img  class="product-about-image"  src="img/product-information/3.png" alt="">
-                </div>
-                <img class="product-about-wrapper__document"  src="img/product-information/4.png" alt="">
-
-                </div>
             </div>
-        </main>
-        @@include('../components/footer.html')
-    </div>
+            <div class="product-about-wrapper__images">
+                <img class="product-about-image" src="img/product-information/2.png" alt="">
+                <img class="product-about-image" src="img/product-information/3.png" alt="">
+            </div>
+            <img class="product-about-wrapper__document" src="img/product-information/4.png" alt="">
+        </div>
+    </main>
+    @@include('../components/footer.html')
+</div>
 </body>
 </html>
