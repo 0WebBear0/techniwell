@@ -77,9 +77,8 @@
     &__img {
       margin-right: 0;
     }
-    &__images {
-      flex-direction: column;
-      align-items: center;
+    &__images{
+      grid-template-columns: repeat(1,1fr);
     }
     &__info {
       margin-bottom: 30px;
