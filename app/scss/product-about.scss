@@ -38,8 +38,11 @@
     text-align: center;
   }
   &__images {
-    display: flex;
-    justify-content: space-between;
+    gap: 70px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
     margin-bottom: 53px;
   }
   &__document{
@@ -53,16 +56,10 @@
 
 
 .product-about-image{
-  max-width: 90%;
   object-fit: contain;
 }
 
 
-image {
-  height: 400px;
-  width: 650px;
-  object-fit: cover;
-}
 @media (max-width: 1200px) {
   .product-about-image{
     margin-bottom: 26px;
