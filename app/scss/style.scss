@@ -314,7 +314,7 @@
     align-items: center;
     justify-content: space-between;
     font-size: 16px;
-    gap: 20px;
+    gap: 50px;
   }
 
   &__sub-menu-logo {
@@ -792,7 +792,13 @@
 
     &__sub-menu {
 
+    }
 
+    &-black {
+      &__sub-menu {
+        display: flex;
+        gap: 30px;
+      }
     }
   }
   .footer {

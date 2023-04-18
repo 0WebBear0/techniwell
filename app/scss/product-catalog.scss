@@ -16,7 +16,8 @@
   &__card-lists {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
+    justify-items: start;
+    gap: 30px;
     margin-top: 85px;
   }
 
@@ -30,6 +31,7 @@
     font-size: 16px;
     line-height: 30px;
     max-width: 240px;
+    text-align: center;
   }
 }
 
