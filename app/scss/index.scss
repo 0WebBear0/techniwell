@@ -1066,18 +1066,18 @@
     }
     &__item{
       margin-bottom: 22px;
-
+      width: 100%;
     }
     &__item{
       &:last-child{
         a{
           padding-bottom: 25px;
           position: relative;
+          width: 100%;
           &::after{
             content: '';
             position: absolute;
             border: 1px solid #ffffff;
-            width: 700%;
             left: 0;
             bottom: 0;
           }
@@ -1105,9 +1105,9 @@
       align-items: center;
     }
   }
-  .main-help__img img {
-    max-height: 200px;
-    min-height: 200px;
+  .main-help__img {
+    max-height: 280px;
+    min-height: 280px;
     min-width: 280px;
   }
   .main-experience__left {
