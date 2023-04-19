@@ -157,6 +157,7 @@
 
   &__sub-menu-item {
     width: 100%;
+    max-width: 250px;
     font-weight: 500;
     font-size: 16px;
     line-height: 30px;
@@ -240,6 +241,25 @@
     line-height: 37px;
     margin-right: 54px;
     cursor: pointer;
+    @include transition();
+
+    &:hover {
+      @include transform();
+    }
+  }
+
+  &__menu-text_top {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    color: #1D1717;
+
+    cursor: pointer;
+
+    width: 250px;
     @include transition();
 
     &:hover {
