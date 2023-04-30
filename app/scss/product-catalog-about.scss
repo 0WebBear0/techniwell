@@ -7,8 +7,9 @@
   line-height: 65px;
 
   &__card-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
     justify-content: space-between;
     gap: 30px;
     margin-bottom: 35px;
