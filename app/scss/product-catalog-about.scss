@@ -71,8 +71,12 @@
   &__img {
     margin-bottom: 36px;
     width: 200px;
-    height: 120px;
+    max-height: 300px;
     object-fit: cover;
+
+    img {
+      max-height: 300px;
+    }
   }
 
   // .card__title
