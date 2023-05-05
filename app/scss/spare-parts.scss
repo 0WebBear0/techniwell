@@ -94,10 +94,14 @@
   // .spare-parts-page__card-name
 
   &__card-name {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+  }
+  &__category {
+    width: 50%;
   }
 
   // .spare-parts-page__category
@@ -146,8 +150,8 @@
   // .card-name-spare__img
 
   &__img {
-    width: 60;
-    height: 60;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
     margin-right: 50px;
   }
