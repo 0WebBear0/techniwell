@@ -11,7 +11,7 @@
     grid-template-columns: repeat(4, 1fr);
 
     justify-content: space-between;
-    gap: 30px;
+    gap: 15px;
     margin-bottom: 35px;
   }
 
@@ -57,12 +57,12 @@
 
 
 .card {
-  margin-right: 35px;
   max-width: 270px;
   padding: 31px 35px 38px;
 
   background: #FFFFFF;
   box-shadow: 4px 4px 20px 10px rgba(210, 210, 210, 0.25);
+
   @include transition();
   &:hover {
     @include transform()
@@ -73,7 +73,7 @@
     width: 200px;
     max-height: 300px;
     max-width: 200px;
-    object-fit: cover;
+    object-fit: contain;
 
     img {
       max-height: 300px;
@@ -118,6 +118,16 @@
   margin-bottom: 35px;
 }
 
+@media (max-width: 1500px) {
+  .product-catalog-about {
+    &__card-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+    }
+  }
+}
+
 @media (max-width: 950px) {
   .product-catalog-about {
     &__card-list {
@@ -142,7 +152,7 @@
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 580px) {
 
   .product-catalog-about {
     &__card-list {
