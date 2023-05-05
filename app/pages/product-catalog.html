@@ -15,7 +15,7 @@
 <body>
 <div class="wrapper">
     @@include('../components/header-black.html', {"class": "base"})
-    <main class="main">
+    <main class="main product-catalog__wrapper">
         <div class="page-padding">
             <div class="product-catalog">
                 <div class="product-catalog__top">
@@ -24,44 +24,44 @@
                 <div class="product-catalog__wrapper">
                     <div class="product-catalog__card-lists">
                         <a class="product-catalog__card" href="#">
-                            <img class="product-catalog__img"src="img/product-catalog/1.png" alt="">
+                            <img class="product-catalog__img" src="img/product-catalog/1.png" alt="">
                             <div class="product-catalog__title">Триплексные насосы</div>
                         </a>
                         <a class="product-catalog__card" href="#">
-                            <img class="product-catalog__img"src="img/product-catalog/2.png" alt="">
+                            <img class="product-catalog__img" src="img/product-catalog/2.png" alt="">
                             <div class="product-catalog__title">Смесительные агрегаты</div>
                         </a>
                         <a class="product-catalog__card" href="#">
-                            <img class="product-catalog__img"src="img/product-catalog/3.png" alt="">
+                            <img class="product-catalog__img" src="img/product-catalog/3.png" alt="">
                             <div class="product-catalog__title">Компактные системы
                                 для струйной цементации
                                 Jet Grouting
                             </div>
                         </a>
                         <a class="product-catalog__card" href="#">
-                            <img class="product-catalog__img"src="img/product-catalog/4.png" alt="">
+                            <img class="product-catalog__img" src="img/product-catalog/4.png" alt="">
                             <div class="product-catalog__title">Инъекционные агрегаты</div>
                         </a>
                         <a class="product-catalog__card" href="#">
-                            <img class="product-catalog__img"src="img/product-catalog/5.png" alt="">
+                            <img class="product-catalog__img" src="img/product-catalog/5.png" alt="">
                             <div class="product-catalog__title">Триплексные насосы</div>
                         </a>
                         <a class="product-catalog__card" href="#">
-                            <img class="product-catalog__img"src="img/product-catalog/6.png" alt="">
+                            <img class="product-catalog__img" src="img/product-catalog/6.png" alt="">
                             <div class="product-catalog__title">Контейнерные инъекционные агрегаты</div>
                         </a>
                         <a class="product-catalog__card" href="#">
-                            <img class="product-catalog__img"src="img/product-catalog/7.png" alt="">
+                            <img class="product-catalog__img" src="img/product-catalog/7.png" alt="">
                             <div class="product-catalog__title">Силосы для сыпучих материалов</div>
                         </a>
                         <a class="product-catalog__card" href="#">
-                            <img class="product-catalog__img"src="img/product-catalog/8.png" alt="">
+                            <img class="product-catalog__img" src="img/product-catalog/8.png" alt="">
                             <div class="product-catalog__title">Буровая колонна</div>
                         </a>
-                        </div>
                     </div>
                 </div>
             </div>
+            @@include('../components/paginator.html')
         </div>
     </main>
     @@include('../components/footer.html')
