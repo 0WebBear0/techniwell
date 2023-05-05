@@ -1,39 +1,53 @@
 .product-about-wrapper {
   color: black;
   padding-bottom: 40px;
-  
-  &__name{
+
+  &__name {
     display: flex;
+    width: 100%;
     margin-bottom: 100px;
   }
-  &__img{
+
+  &__img {
     margin-right: 73px;
-    flex: 0 1 50%;
+    max-width: 700px !important;
+    max-height: 400px !important;
+    object-fit: cover;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
   }
+
   &__img,
   &__images-list-img,
-  &__document img{
+  &__document img {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
   }
+
   &__info {
-    flex: 1 0 50%;
+    width: 100%;
     max-width: 100%;
     display: flex;
     flex-direction: column;
   }
+
   &__title {
     font-size: 38px;
     line-height: 46px;
     margin-bottom: 36px;
   }
+
   &__text {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
     margin-bottom: 48px;
   }
+
   &__button {
     background-color: #D82329;
     padding: 20px 77px 20px 77px;
@@ -44,30 +58,47 @@
     display: block;
     max-width: 329px;
     text-align: center;
+    white-space: nowrap;
   }
+
   &__images-list {
     gap: 70px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
     margin-bottom: 53px;
   }
-  &__document{
+
+  &__document {
     padding: 0 10px;
   }
 
+  &-image {
+    width: 48%;
+    height: 48%;
+    object-fit: fill;
+  }
+
+  &__images {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
 
 }
 
 
 @media (max-width: 1200px) {
   .product-about-wrapper {
-    &__images-list{
+    &__images-list {
       margin-bottom: 26px;
       padding: 0 20px;
-      grid-template-columns: repeat(1,1fr);
+      grid-template-columns: repeat(1, 1fr);
     }
+
     &__name {
       flex-direction: column;
       align-items: center;
@@ -75,7 +106,9 @@
       margin: 0 auto;
       padding: 0 20px;
     }
+
     &__img {
+      margin-bottom: 50px;
       margin-right: 0;
     }
 
@@ -85,6 +118,7 @@
       padding: 0px 50px;
       align-items: center;
     }
+
     &__title {
       font-size: 50px;
       max-width: 1140px;
@@ -93,7 +127,7 @@
     &__text {
       font-size: 20px;
     }
-}
+  }
 }
 
 
@@ -104,12 +138,23 @@
       font-size: 40px;
 
     }
-    &__name{
+
+    &__name {
       display: flex;
       margin-bottom: 40px;
     }
+
     &__button {
       margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .product-about-wrapper {
+    &-image {
+      width: 100% !important;
+      height: 100% !important;
     }
   }
 }

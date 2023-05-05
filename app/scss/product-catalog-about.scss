@@ -72,10 +72,12 @@
     margin-bottom: 36px;
     width: 200px;
     max-height: 300px;
+    max-width: 200px;
     object-fit: cover;
 
     img {
       max-height: 300px;
+      max-width: 200px;
     }
   }
 
@@ -85,7 +87,7 @@
     margin-bottom: 9px;
     font-size: 20px;
     line-height: 24px;
-
+    color: black;
   }
 
   // .card__text
