@@ -77,6 +77,12 @@
     table {
       border-collapse: collapse !important;
       border-spacing: 0 !important;
+      table-layout: fixed;
+    }
+
+    tr {
+      display: flex;
+      flex-direction: row;
     }
 
     td {
@@ -100,15 +106,19 @@
   // .spare-parts-page__card-name
 
   &__card-name {
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   &__category {
     width: 50%;
+    max-width: 50%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
   }
 
   // .spare-parts-page__category
@@ -118,6 +128,8 @@
     border: 1px solid #D82329;
     padding: 10px 18px;
     width: max-content;
+    align-self: center;
+    margin: 0;
   }
 
   &__category--active {
@@ -147,7 +159,13 @@
   // .spare-title-category__category
 
   &__category {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
 
+    &:last-child {
+      justify-content: center;
+    }
   }
 }
 
