@@ -452,7 +452,9 @@
     align-items: start;
 
     &__button {
-      display: none;
+      display: flex;
+      align-self: center;
+      //display: none;
     }
 
     &__top {
@@ -507,8 +509,9 @@
       &::-webkit-scrollbar {
         height: 5px;
         margin-right: 150px;
+        overflow:visible;
+        width: 100%;
       }
-
       &::-webkit-scrollbar-thumb {
         width: 5px;
         border-radius: 10px;
