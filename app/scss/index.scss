@@ -1096,7 +1096,22 @@
 }
 
 @media (max-width: 560px) {
-
+  .main-application{
+    &__title {
+      max-width: none;
+      width: 100%;
+      text-align: center;
+    }
+    &__text {
+      max-width: none;
+      width: 100%;
+      text-align: center;
+    }
+    &__button-wrapper {
+      width: 100%;
+      text-align: center;
+    }
+  }
   .main-about-big {
     &__item-description {
       cursor: default;
@@ -1171,5 +1186,19 @@
   .main-experience__left {
     gap: 8vw;
     flex-wrap: wrap;
+  }
+  .main-experience__text {
+    text-align: center;
+  }
+  .main-spare__info {
+    max-width: none;
+  }
+  .main-spare__title {
+    text-align: center;
+    max-width: none;
+  }
+  .main-spare__text {
+    text-align: center;
+    max-width: none;
   }
 }
