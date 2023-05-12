@@ -13,7 +13,7 @@
 
     &__plus {
       margin-top: 5px;
-      font-size: 100px;
+      font-size: 65px;
       line-height: 65px;
       opacity: 0.5;
     }
@@ -37,7 +37,7 @@
 
     &__title {
       font-weight: 700;
-      font-size: 100px;
+      font-size: 65px;
       line-height: 65px;
       display: flex;
       gap: 10px;
@@ -609,10 +609,10 @@
 .card-list {
   margin-bottom: 109px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
   &__item {
-    padding: 0 38px;
+    padding: 0 24px;
   }
 }
 
@@ -624,7 +624,7 @@
   @include transition();
   cursor: pointer;
   background-color: #C21C22;;
-  width: 376px;
+  width: 300px;
 
   // .item__up
 
@@ -673,7 +673,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
-    margin-bottom: 90px;
+    margin-bottom: 30px;
   }
 }
 
@@ -835,7 +835,7 @@
 
       &__inner {
         display: flex;
-        align-items: start;
+        align-items: center;
         flex-direction: column;
       }
 
