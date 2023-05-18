@@ -501,43 +501,44 @@
       flex-direction: row;
       align-items: flex-end;
       gap: 20px;
-      overflow: auto;
+      //overflow: auto;
 
       width: 100%;
       z-index: 11;
       padding-bottom: 40px;
       position: relative;
-      -webkit-overflow-scrolling:touch;
+      //-webkit-overflow-scrolling:touch;
 
-      &::-webkit-scrollbar {
-        -webkit-appearance: none;
-
-        height: 5px;
-        margin-right: 150px;
-        overflow:visible;
-
-        min-width: 7px;
-        width: 100%;
-      }
-      &::-webkit-scrollbar-thumb {
-        width: 5px;
-        border-radius: 10px;
-        background-color: #D82329;
-        box-shadow: 0 0 1px #D82329;
-      }
-
-      &::-webkit-scrollbar-track {
-        width: 5px;
-        -webkit-box-shadow: inset 0 0 6px rgba(white, 0.9);
-        border-radius: 10px;
-        background-color: #D9D9D9;
-      }
+      //&::-webkit-scrollbar {
+      //  -webkit-appearance: none;
+      //
+      //  height: 5px;
+      //  margin-right: 150px;
+      //  overflow:visible;
+      //
+      //  min-width: 7px;
+      //  width: 100%;
+      //}
+      //&::-webkit-scrollbar-thumb {
+      //  width: 5px;
+      //  border-radius: 10px;
+      //  background-color: #D82329;
+      //  box-shadow: 0 0 1px #D82329;
+      //}
+      //
+      //&::-webkit-scrollbar-track {
+      //  width: 5px;
+      //  -webkit-box-shadow: inset 0 0 6px rgba(white, 0.9);
+      //  border-radius: 10px;
+      //  background-color: #D9D9D9;
+      //}
     }
 
     &__card {
       display: flex;
       flex-direction: column;
       align-items: center;
+      position: relative;
 
       font-family: 'Montserrat', sans-serif;
       font-style: normal;
@@ -566,11 +567,16 @@
       img {
         max-height: 250px;
         max-width: 250px;
+        width: 100%;
         object-fit: contain;
       }
 
       p {
-        margin-top: 30px;
+        position: absolute;
+        bottom: 10%;
+        left: 0;
+        width: 100%;
+        //margin-top: 30px;
         color: black;
       }
     }
@@ -580,7 +586,7 @@
       display: flex;
       justify-content: end;
       width: 100%;
-      overflow: auto;
+      //overflow: auto;
 
       &__wrapper {
         display: flex;
@@ -972,6 +978,11 @@
       }
 
       &__card {
+        img {
+          margin-left: auto;
+          margin-right: auto;
+          align-self: center;
+        }
         p {
           display: flex;
           justify-content: center;
