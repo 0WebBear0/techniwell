@@ -509,15 +509,20 @@
       -webkit-overflow-scrolling:touch;
 
       &::-webkit-scrollbar {
+        -webkit-appearance: none;
+
         height: 5px;
         margin-right: 150px;
         overflow:visible;
+
+        min-width: 7px;
         width: 100%;
       }
       &::-webkit-scrollbar-thumb {
         width: 5px;
         border-radius: 10px;
         background-color: #D82329;
+        box-shadow: 0 0 1px #D82329;
       }
 
       &::-webkit-scrollbar-track {
