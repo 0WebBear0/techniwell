@@ -501,7 +501,8 @@
       flex-direction: row;
       align-items: flex-end;
       gap: 20px;
-      overflow-x: auto;
+      overflow: auto;
+
       width: 100%;
       z-index: 11;
       padding-bottom: 40px;
