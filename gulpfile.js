@@ -12,24 +12,23 @@ function styles() {
     return src('app/scss/style.scss')
         .pipe(scss({ outputStyle: 'compressed' }))
         .pipe(concat('style.min.css'))
-        .pipe(dest(sourceFiles+'/css'))
+        .pipe(dest(sourceFiles + '/css'))
         .pipe(browserSync.stream())
 }
-
 
 
 function browserSyncF() {
     browserSync.init({
         server: {
-            baseDir: "app/",
+            baseDir: 'app/',
         },
     })
 }
 
 function html() {
-    return src(sourceFiles+'/pages/*.html')
+    return src(sourceFiles + '/pages/*.html')
         .pipe(fileInclude())
-        .pipe(dest(sourceFiles+'/'))
+        .pipe(dest(sourceFiles + '/'))
         .pipe(browserSync.stream())
 }
 
@@ -39,5 +38,24 @@ function watching() {
     watch(['app/components/**/*.html'], html, browserSync.reload)
 }
 
-exports.default = parallel(styles, html, browserSyncF, watching)
+function vendorJS() {
+    const modules = [
+        'node_modules/swiper/swiper-bundle.min.js',
+        'node_modules/swiper/swiper-bundle.min.js.map',
+    ]
+
+    return src(modules)
+        .pipe(dest('app/build/js'))
+}
+
+function vendorCSS() {
+    const modules = [
+        'node_modules/swiper/swiper-bundle.min.css',
+    ]
+
+    return src(modules)
+        .pipe(dest('app/build/css/pages'))
+}
+
+exports.default = parallel(styles, html, browserSyncF, watching, vendorJS, vendorCSS)
 
