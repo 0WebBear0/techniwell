@@ -452,9 +452,9 @@
     align-items: start;
 
     &__button {
-      display: flex;
+      //display: flex;
       align-self: center;
-      //display: none;
+      display: none;
     }
 
     &__top {
@@ -957,6 +957,7 @@
       }
 
       &__button {
+        display: flex;
         margin-top: 50px;
         border-radius: 5px;
         text-align: center;
