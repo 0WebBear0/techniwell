@@ -35,11 +35,11 @@
                 <div class="splitter__white"></div>
             </div>
             <div class="header__sub-menu-item">
-                <a href="#about" class="header__link">О компании</a>
+                <a href="#about" class="header__link close-popup">О компании</a>
                 <div class="splitter__white"></div>
             </div>
-            <div class="header__sub-menu-item">
-                <a href="/product-catalog-about.html" class="header__link">Статьи</a>
+            <div class="header__sub-menu-item close-popup">
+                <a href="#news" class="header__link">Статьи</a>
                 <div class="splitter__white"></div>
             </div>
         </nav>
@@ -96,11 +96,11 @@
                 <div class="splitter__white"></div>
             </div>
             <div class="header__sub-menu-item">
-                <a href="" class="header__link">О компании</a>
+                <a href="#about" class="header__link close-popup">О компании</a>
                 <div class="splitter__white"></div>
             </div>
             <div class="header__sub-menu-item">
-                <a href="" class="header__link">Статьи</a>
+                <a href="#news" class="header__link close-popup">Статьи</a>
                 <div class="splitter__white"></div>
             </div>
         </nav>
@@ -111,6 +111,13 @@
         document.getElementById("burgerIndex").classList.add("open")
         document.getElementsByClassName("modal")[0].style.zIndex = "101"
     })
+    document.querySelectorAll(".close-popup").forEach((item)=>{
+        item.addEventListener("click", ()=> {
+            document.getElementById("burgerIndex").classList.remove("open")
+            document.getElementsByClassName("modal")[0].style.zIndex = "-1"
+        })
+    })
+
     document.getElementsByClassName("modal__back")[0].addEventListener("click", ()=> {
         document.getElementById("burgerIndex").classList.remove("open")
         document.getElementsByClassName("modal")[0].style.zIndex = "-1"
