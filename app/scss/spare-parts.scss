@@ -4,6 +4,17 @@
   color: rgb(0, 0, 0);
   margin-bottom: 120px;
 
+  &__form {
+
+    display: flex;
+    align-self: center;
+    justify-content: center;
+
+    &_wrapper {
+      max-width: 450px;
+    }
+  }
+
   &__button {
     margin-right: 26px;
     border: none;

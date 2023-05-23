@@ -19,54 +19,84 @@
     @@include('../components/header-black.html', {"class": "base"})
     <main class="main">
         <div class="spare-parts-page page-padding">
-            <div class="spare-parts-page__top">
-                <form class="spare-parts-page__search">                    
-                    <button class="spare-parts-page__button" type="submit">
-                        <svg  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.031 16.617L22.314 20.899L20.899 22.314L16.617 18.031C15.0237 19.3082 13.042 20.0029 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20.0029 13.042 19.3082 15.0237 18.031 16.617ZM16.025 15.875C17.2941 14.5699 18.0029 12.8204 18 11C18 7.132 14.867 4 11 4C7.132 4 4 7.132 4 11C4 14.867 7.132 18 11 18C12.8204 18.0029 14.5699 17.2941 15.875 16.025L16.025 15.875Z"
-                              fill="#D82329"/>
-                        </svg>
-                    </button>
-                    <input class="spare-parts-page__input" type="text" placeholder="Найдите нужный товар ">
-                </form>
-
-                <button class="spare-parts-page__filter">
-                    <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 4.73226H16.3333M16.3333 4.73226C16.3333 6.79353 18.0495 8.46451 20.1667 8.46451C22.2838 8.46451 24 6.79352 24 4.73226C24 2.67099 22.2838 1 20.1667 1C18.0495 1 16.3333 2.67099 16.3333 4.73226ZM8.66667 14.6849H24M8.66667 14.6849C8.66667 16.7463 6.95042 18.4172 4.83333 18.4172C2.71625 18.4172 1 16.7463 1 14.6849C1 12.6236 2.71625 10.9527 4.83333 10.9527C6.95042 10.9527 8.66667 12.6236 8.66667 14.6849Z"
-                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    Фильтры
-                </button>
+            <div class="spare-parts-page__form">
+                <div class="popup__items spare-parts-page__form_wrapper">
+                    <div class="popup__item">
+                        <label for="inputName">Ваше имя</label>
+                        <input id="inputName" class="popup__input" placeholder="Введите ваше имя" />
+                    </div>
+                    <div class="popup__item">
+                        <label for="inputEmail">E-mail</label>
+                        <input id="inputEmail" class="popup__input" placeholder="Введите ваш e-mail" />
+                    </div>
+                    <div class="popup__item">
+                        <label for="inputPhone">Ваш телефон</label>
+                        <input id="inputPhone" class="popup__input" placeholder="Введите ваш телефон" />
+                    </div>
+                    <div class="popup__item">
+                        <label for="inputPhone">Наименование товара</label>
+                        <input id="inputProduct" class="popup__input" placeholder="Введите название товара" />
+                    </div>
+                    <div class="popup__item">
+                        <button class="popup__send">
+                            Оставить заявку
+                        </button>
+                    </div>
+                    <div class="popup__item">
+                        <p class="popup__helper-text">
+                            Нажимая на кнопку, Вы принимаете Положение и Согласие на обработку персональных данных
+                        </p>
+                    </div>
+                </div>
             </div>
-            <table cellspacing="0" cellpadding="0" class="spare-parts-page__wrapper">
-                <tr>
-                    <th class="spare-title-category__category">Название запчасти</th>
-                    <th class="spare-title-category__category">Параметр 1</th>
-                </tr>
-                <tr>
-                    <td class="spare-parts-page__card-name">
-<!--                        <img class="card-name-spare__img"src="img/spare_frame/01.png" alt="">-->
-                        <div class="card-name-spare__text">Название товара</div>
-                    </td>
+<!--            <div class="spare-parts-page__top">-->
+<!--                <form class="spare-parts-page__search">-->
+<!--                    <button class="spare-parts-page__button" type="submit">-->
+<!--                        <svg  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                            <path d="M18.031 16.617L22.314 20.899L20.899 22.314L16.617 18.031C15.0237 19.3082 13.042 20.0029 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20.0029 13.042 19.3082 15.0237 18.031 16.617ZM16.025 15.875C17.2941 14.5699 18.0029 12.8204 18 11C18 7.132 14.867 4 11 4C7.132 4 4 7.132 4 11C4 14.867 7.132 18 11 18C12.8204 18.0029 14.5699 17.2941 15.875 16.025L16.025 15.875Z"-->
+<!--                              fill="#D82329"/>-->
+<!--                        </svg>-->
+<!--                    </button>-->
+<!--                    <input class="spare-parts-page__input" type="text" placeholder="Найдите нужный товар ">-->
+<!--                </form>-->
 
-                    <td class="spare-parts-page__category"><div class="spare-parts-page__selected">Lorem</div></td>
-                </tr>
-                <tr>
-                    <td class="spare-parts-page__card-name">
-<!--                        <img class="card-name-spare__img"src="img/spare_frame/01.png" alt="">-->
-                        <div class="card-name-spare__text">Название товара</div>
-                    </td>
+<!--                <button class="spare-parts-page__filter">-->
+<!--                    <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                        <path d="M1 4.73226H16.3333M16.3333 4.73226C16.3333 6.79353 18.0495 8.46451 20.1667 8.46451C22.2838 8.46451 24 6.79352 24 4.73226C24 2.67099 22.2838 1 20.1667 1C18.0495 1 16.3333 2.67099 16.3333 4.73226ZM8.66667 14.6849H24M8.66667 14.6849C8.66667 16.7463 6.95042 18.4172 4.83333 18.4172C2.71625 18.4172 1 16.7463 1 14.6849C1 12.6236 2.71625 10.9527 4.83333 10.9527C6.95042 10.9527 8.66667 12.6236 8.66667 14.6849Z"-->
+<!--                              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>-->
+<!--                    </svg>-->
+<!--                    Фильтры-->
+<!--                </button>-->
+<!--            </div>-->
+<!--            <table cellspacing="0" cellpadding="0" class="spare-parts-page__wrapper">-->
+<!--                <tr>-->
+<!--                    <th class="spare-title-category__category">Название запчасти</th>-->
+<!--                    <th class="spare-title-category__category">Параметр 1</th>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                    <td class="spare-parts-page__card-name">-->
+<!--&lt;!&ndash;                        <img class="card-name-spare__img"src="img/spare_frame/01.png" alt="">&ndash;&gt;-->
+<!--                        <div class="card-name-spare__text">Название товара</div>-->
+<!--                    </td>-->
 
-                    <td class="spare-parts-page__category"><div class="spare-parts-page__selected">Lorem</div></td>
-                </tr>
-            </table>
-            <div class="spare-parts-page__wrapper_mobile">
-                @@include('../components/spare-parts/spare-card.html')
-                @@include('../components/spare-parts/spare-card.html')
-            </div>
-            <div class="spare-parts-page__pagination">
-                @@include('../components/paginator.html')
-            </div>
+<!--                    <td class="spare-parts-page__category"><div class="spare-parts-page__selected">Lorem</div></td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                    <td class="spare-parts-page__card-name">-->
+<!--&lt;!&ndash;                        <img class="card-name-spare__img"src="img/spare_frame/01.png" alt="">&ndash;&gt;-->
+<!--                        <div class="card-name-spare__text">Название товара</div>-->
+<!--                    </td>-->
+
+<!--                    <td class="spare-parts-page__category"><div class="spare-parts-page__selected">Lorem</div></td>-->
+<!--                </tr>-->
+<!--            </table>-->
+<!--            <div class="spare-parts-page__wrapper_mobile">-->
+<!--                @@include('../components/spare-parts/spare-card.html')-->
+<!--                @@include('../components/spare-parts/spare-card.html')-->
+<!--            </div>-->
+<!--            <div class="spare-parts-page__pagination">-->
+<!--                @@include('../components/paginator.html')-->
+<!--            </div>-->
         </div>
     </main>
     @@include('../components/footer.html')
