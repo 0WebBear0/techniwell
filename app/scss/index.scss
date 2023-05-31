@@ -716,6 +716,12 @@
 
 @media (max-width: 1600px) {
   .main {
+    &__img {
+      background-size: cover;
+      -moz-background-size: cover; /* Firefox 3.6+ */
+      -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+      -o-background-size: cover; /* Opera 9.6+ */
+    }
     &-about-big {
       &__info {
         flex-wrap: wrap;
