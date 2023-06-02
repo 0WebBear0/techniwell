@@ -857,11 +857,14 @@
   }
   .footer__sub-menu {
     gap: 15px;
+    display: flex;
+    justify-content: flex-start;
   }
 
   .footer__sub-menu-item {
-    //max-width: 150px;
-    width: max-content;
+    width: 100%;
+    max-width: 140px;
+    //width: max-content;
   }
   .footer__sub-menu-item-square {
     //max-width: 150px;
@@ -991,6 +994,9 @@
 @media (max-width: 480px) {
   .modal__info {
     padding: 35px 20px 35px 30px;
+  }
+  .footer__menu-mail {
+    margin: 0;
   }
   .page-padding {
     padding: 0 5px;
