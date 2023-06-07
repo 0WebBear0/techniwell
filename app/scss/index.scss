@@ -715,7 +715,7 @@
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1650px) {
   .main {
     &__img {
       background-size: cover;
@@ -1191,6 +1191,8 @@
     }
 
     &__item-description {
+      display: flex;
+      justify-content: center;
       margin-bottom: 16px;
     }
 
