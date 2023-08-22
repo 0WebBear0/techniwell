@@ -5,7 +5,7 @@ const concat = require('gulp-concat')
 const browserSync = require('browser-sync').create()
 const fileInclude = require('gulp-file-include')
 
-const sourceFiles = 'app'
+const sourceFiles = 'build'
 
 
 function styles() {
@@ -20,16 +20,21 @@ function styles() {
 function browserSyncF() {
     browserSync.init({
         server: {
-            baseDir: 'app/',
+            baseDir: 'build/',
         },
     })
 }
 
 function html() {
-    return src(sourceFiles + '/pages/*.html')
+    return src('app/pages/*.html')
         .pipe(fileInclude())
         .pipe(dest(sourceFiles + '/'))
         .pipe(browserSync.stream())
+}
+
+function img() {
+    return src(['app/img/**/*.{gif,jpg,png,svg}'])
+      .pipe(dest(sourceFiles + '/img'))
 }
 
 function watching() {
@@ -45,7 +50,7 @@ function vendorJS() {
     ]
 
     return src(modules)
-        .pipe(dest('app/build/js'))
+        .pipe(dest('build/js'))
 }
 
 function vendorCSS() {
@@ -54,8 +59,8 @@ function vendorCSS() {
     ]
 
     return src(modules)
-        .pipe(dest('app/build/css/pages'))
+        .pipe(dest('build/css/pages'))
 }
 
-exports.default = parallel(styles, html, browserSyncF, watching, vendorJS, vendorCSS)
+exports.default = parallel(styles, html, img, browserSyncF, watching, vendorJS, vendorCSS)
 
