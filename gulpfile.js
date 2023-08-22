@@ -62,5 +62,5 @@ function vendorCSS() {
         .pipe(dest('build/css/pages'))
 }
 
-exports.default = parallel(styles, html, img, browserSyncF, watching, vendorJS, vendorCSS)
+exports.default = parallel(vendorJS, vendorCSS, styles, html, img, browserSyncF, watching)
 
